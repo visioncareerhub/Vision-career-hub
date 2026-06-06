@@ -6,6 +6,7 @@
 <title>Vision Career Hub</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -14,24 +15,24 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#f4f7fc;
+background:#f5f7fb;
 color:#222;
 }
 
 header{
 background:linear-gradient(135deg,#0f172a,#2563eb);
 color:white;
-padding:80px 20px;
 text-align:center;
+padding:80px 20px;
 }
 
 header h1{
-font-size:48px;
+font-size:55px;
 margin-bottom:15px;
 }
 
 header p{
-font-size:20px;
+font-size:22px;
 margin-bottom:25px;
 }
 
@@ -39,22 +40,23 @@ margin-bottom:25px;
 display:inline-block;
 background:#22c55e;
 color:white;
-padding:14px 28px;
+padding:15px 30px;
 border-radius:10px;
 text-decoration:none;
 font-weight:bold;
+font-size:18px;
 }
 
 .section{
-padding:60px 20px;
 max-width:1200px;
 margin:auto;
+padding:60px 20px;
 }
 
 .section h2{
 text-align:center;
-margin-bottom:30px;
-font-size:32px;
+margin-bottom:40px;
+font-size:38px;
 }
 
 .cards{
@@ -67,7 +69,12 @@ gap:20px;
 background:white;
 padding:25px;
 border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
@@ -75,18 +82,44 @@ color:#2563eb;
 margin-bottom:10px;
 }
 
-.premium{
+.price-box{
 background:white;
-padding:40px;
-text-align:center;
+padding:50px;
 border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-.premium h3{
-font-size:40px;
+.price-box h3{
+font-size:50px;
 color:#22c55e;
-margin:15px 0;
+margin:20px 0;
+}
+
+.form-box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+max-width:700px;
+margin:auto;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+background:#2563eb;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+cursor:pointer;
 }
 
 footer{
@@ -94,18 +127,207 @@ background:#0f172a;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:40px;
+margin-top:50px;
 }
-</style>
 
+</style>
 </head>
+
 <body>
 
 <header>
+
 <h1>Vision Career Hub</h1>
-<p>Discover Your Future. Build Your Vision.</p>
+
+<p>
+100+ Career Paths, One Vision.
+<br><br>
+Discover Your Future. Build Your Vision.
+</p>
+
 <a href="#" class="btn">Explore Careers</a>
+
 </header>
 
 <section class="section">
-<h2>Popular
+
+<h2>Popular Career Paths</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Cyber Security</h3>
+<p>Protect systems and networks from cyber attacks.</p>
+</div>
+
+<div class="card">
+<h3>AI & Machine Learning</h3>
+<p>Build intelligent systems and future technologies.</p>
+</div>
+
+<div class="card">
+<h3>Software Engineer</h3>
+<p>Create applications, websites and software.</p>
+</div>
+
+<div class="card">
+<h3>Data Analyst</h3>
+<p>Analyze business data and generate insights.</p>
+</div>
+
+<div class="card">
+<h3>Forensic Science</h3>
+<p>Use science to solve criminal investigations.</p>
+</div>
+
+<div class="card">
+<h3>Digital Marketing</h3>
+<p>Promote brands and businesses online.</p>
+</div>
+
+<div class="card">
+<h3>Government Jobs</h3>
+<p>Stable careers through competitive exams.</p>
+</div>
+
+<div class="card">
+<h3>Study Abroad</h3>
+<p>Explore education and careers worldwide.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Why Choose Vision Career Hub?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>100+ Career Paths</h3>
+<p>Technology, Medical, Commerce, Law and more.</p>
+</div>
+
+<div class="card">
+<h3>Salary Insights</h3>
+<p>Know earning potential before choosing a career.</p>
+</div>
+
+<div class="card">
+<h3>College Guidance</h3>
+<p>Find suitable colleges and courses.</p>
+</div>
+
+<div class="card">
+<h3>Career Roadmaps</h3>
+<p>Step-by-step success plans.</p>
+</div>
+
+<div class="card">
+<h3>Future Scope</h3>
+<p>Understand future demand and opportunities.</p>
+</div>
+
+<div class="card">
+<h3>Abroad Opportunities</h3>
+<p>Explore international career options.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="price-box">
+
+<h2>🚀 Premium Career Guide</h2>
+
+<h3>₹9</h3>
+
+<p>
+100+ Career Paths<br><br>
+Salary Insights<br><br>
+Course Details<br><br>
+Future Scope<br><br>
+Career Roadmaps<br><br>
+India & Abroad Opportunities
+</p>
+
+<br>
+
+<a href="#" class="btn">Coming Soon</a>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Free Career Guidance Form</h2>
+
+<div class="form-box">
+
+<input type="text" placeholder="Enter Your Name">
+
+<select>
+<option>Select Class</option>
+<option>10th</option>
+<option>12th</option>
+<option>Graduate</option>
+</select>
+
+<input type="text" placeholder="Interested Field">
+
+<button>Submit</button>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>About Vision Career Hub</h2>
+
+<div class="card">
+
+<p>
+
+Vision Career Hub helps students choose the right career path through simple and affordable guidance.
+
+We provide career options, salary insights, college information, future scope and step-by-step roadmaps.
+
+Our mission is to help every student make better career decisions.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Contact Us</h2>
+
+<div class="card">
+
+<p>Email: visioncareerhub@gmail.com</p>
+
+<br>
+
+<p>Instagram: @visioncareerhub</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Vision Career Hub | All Rights Reserved
+
+</footer>
+
+</body>
+</html>
