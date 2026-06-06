@@ -262,23 +262,59 @@ India & Abroad Opportunities
 </section>
 
 <section class="section">
-
+<section class="section">
 <h2>Free Career Guidance Form</h2>
 
-<div class="form-box">
+<div class="card">
 
-<input type="text" placeholder="Enter Your Name">
+<form name="career-form" method="POST" data-netlify="true">
 
-<select>
-<option>Select Class</option>
+<input type="hidden" name="form-name" value="career-form">
+
+<input type="text" name="name" placeholder="👤 Full Name" required>
+
+<br><br>
+
+<input type="tel" name="mobile" placeholder="📞 Mobile Number" required>
+
+<br><br>
+
+<select name="class" required>
+<option value="">🎓 Select Class</option>
 <option>10th</option>
+<option>11th</option>
 <option>12th</option>
-<option>Graduate</option>
+<option>Graduation</option>
 </select>
 
-<input type="text" placeholder="Interested Field">
+<br><br>
 
-<button>Submit</button>
+<select name="stream">
+<option>Science</option>
+<option>Commerce</option>
+<option>Arts</option>
+<option>Other</option>
+</select>
+
+<br><br>
+
+<input type="text" name="career" placeholder="💼 Interested Career">
+
+<br><br>
+
+<textarea name="message" placeholder="❓Your Question"></textarea>
+
+<br><br>
+
+<button class="btn" type="submit">
+Submit
+</button>
+
+</form>
+
+</div>
+</section>
+
 
 </div>
 
