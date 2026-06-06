@@ -1,56 +1,276 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vision Career Hub</title>
-<link rel="stylesheet" href="style.css">
+
+<title>Vision Career Hub | Your Future, Our Mission</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050b18;
+color:white;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(8,13,28,.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+}
+
+.logo span{
+color:#FFD700;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#FFD700;
+}
+
+.buy-btn{
+background:linear-gradient(45deg,#ffb300,#ffd700);
+padding:12px 25px;
+border-radius:50px;
+font-weight:700;
+color:black;
+}
+
+.hero{
+padding-top:130px;
+padding-bottom:80px;
+}
+
+.hero-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.left{
+flex:1;
+}
+
+.left h1{
+font-size:65px;
+font-weight:800;
+line-height:1.1;
+}
+
+.left h1 span{
+color:#FFD700;
+}
+
+.left p{
+margin-top:20px;
+font-size:18px;
+line-height:1.8;
+color:#d4d4d4;
+}
+
+.buttons{
+margin-top:35px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn1{
+background:linear-gradient(45deg,#ff9800,#FFD700);
+padding:15px 35px;
+border-radius:50px;
+font-weight:700;
+color:black;
+}
+
+.btn2{
+border:2px solid #FFD700;
+padding:15px 35px;
+border-radius:50px;
+color:white;
+}
+
+.right{
+flex:1;
+text-align:center;
+}
+
+.right img{
+width:100%;
+max-width:450px;
+border-radius:25px;
+box-shadow:0 0 40px rgba(255,215,0,.3);
+}
+
+</style>
 </head>
+
 <body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+VISION <span>CAREER HUB</span>
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+<a href="#" class="buy-btn">₹9 PDF</a>
+
+</nav>
+
+</div>
+
+</header>
 
 <section class="hero">
 
-<img src="cover.jpg" class="cover">
+<div class="container">
 
-<h1>100 CAREERS<br>NOBODY TOLD YOU ABOUT</h1>
+<div class="hero-content">
+
+<div class="left">
+
+<h1>
+100+ <span>Career Options</span><br>
+Nobody Told You About
+</h1>
 
 <p>
-Discover hidden career opportunities and explore your future with confidence.
+Explore career options, salary insights, roadmaps, top colleges, study abroad opportunities and future scope in simple language.
+Perfect for students after 10th, 12th and graduation.
 </p>
 
-<div class="price">💎 Launch Offer ₹9 Only</div>
+<div class="buttons">
 
-<a href="#" class="btn">
-BUY NOW
+<a href="#" class="btn1">
+Buy Now ₹9
 </a>
+
+<a href="#" class="btn2">
+Explore Careers
+</a>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<img src="poster.jpg" alt="Vision Career Hub">
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
+<!-- FEATURES SECTION -->
 
 <section class="features">
 
-<h2>What's Inside?</h2>
+<div class="container">
 
-<div class="cards">
+<h2 class="section-title">
+Why Choose Vision Career Hub?
+</h2>
 
-<div class="card">
-<h3>📘 100 Career Options</h3>
-<p>Explore unique and trending careers.</p>
+<div class="feature-grid">
+
+<div class="feature-card">
+<h3>100+ Career Options</h3>
+<p>Explore career paths after 10th, 12th and graduation.</p>
 </div>
 
-<div class="card">
-<h3>🎓 After 10th & 12th</h3>
-<p>Career guidance for students.</p>
+<div class="feature-card">
+<h3>Salary Insights</h3>
+<p>India and abroad salary details for every career.</p>
 </div>
 
-<div class="card">
-<h3>💰 Salary Insights</h3>
-<p>India and Abroad salary information.</p>
+<div class="feature-card">
+<h3>Step-by-Step Roadmaps</h3>
+<p>Clear roadmap to reach your dream career.</p>
 </div>
 
-<div class="card">
-<h3>🌎 Study Abroad</h3>
-<p>Global opportunities and future scope.</p>
+<div class="feature-card">
+<h3>Top Colleges</h3>
+<p>Best colleges and courses for every field.</p>
+</div>
+
+<div class="feature-card">
+<h3>Study Abroad</h3>
+<p>Opportunities in Singapore, Australia, Canada and more.</p>
+</div>
+
+<div class="feature-card">
+<h3>Future Scope</h3>
+<p>Growth, demand and future opportunities.</p>
+</div>
+
 </div>
 
 </div>
@@ -58,30 +278,69 @@ BUY NOW
 </section>
 
 
-<section class="review">
+<!-- SEARCH SECTION -->
 
-<h2>Student Reviews</h2>
+<section class="search-section">
 
-<div class="card">
-⭐⭐⭐⭐⭐<br><br>
-Simple and easy to understand.
-</div>
+<div class="container">
 
-<div class="card">
-⭐⭐⭐⭐⭐<br><br>
-Affordable and valuable guide.
+<h2 class="section-title">
+Search Your Dream Career
+</h2>
+
+<input type="text"
+placeholder="Search Cyber Security, AI, Software Engineer..."
+class="search-box">
+
 </div>
 
 </section>
 
 
-<footer>
+<!-- TRENDING CAREERS -->
 
-Vision Career Hub<br><br>
+<section class="trending">
 
-🌐 www.visioncareerhub.netlify.app
+<div class="container">
 
-</footer>
+<h2 class="section-title">
+🔥 Trending Careers
+</h2>
 
-</body>
-</html>
+<div class="career-grid">
+
+<div class="career-card">
+<h3>Cyber Security</h3>
+<p>High demand with excellent salary.</p>
+</div>
+
+<div class="career-card">
+<h3>AI & Machine Learning</h3>
+<p>Fast growing future technology.</p>
+</div>
+
+<div class="career-card">
+<h3>Software Engineering</h3>
+<p>Popular and stable career option.</p>
+</div>
+
+<div class="career-card">
+<h3>Data Science</h3>
+<p>Excellent package and scope.</p>
+</div>
+
+<div class="career-card">
+<h3>Digital Marketing</h3>
+<p>Freelancing and remote jobs available.</p>
+</div>
+
+<div class="career-card">
+<h3>Forensic Science</h3>
+<p>Government and private opportunities.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
